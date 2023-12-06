@@ -4,6 +4,7 @@ function inserir(num) {
 }
 function limpar() {
     document.getElementById('resultado').innerHTML = "";
+    document.getElementById('resultado2').innerHTML = ``;
 }
 function voltar() {
     let resultado = document.getElementById('resultado').innerHTML;
