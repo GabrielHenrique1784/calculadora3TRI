@@ -1,24 +1,36 @@
-function inserir(num) {
-    let numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + num;
-}
+
 function limpar() {
-    document.getElementById('resultado').innerHTML = "";
-    document.getElementById('resultado2').innerHTML = ``;
+    document.getElementById('resultados1').innerHTML = "";
+
+    document.getElementById('resultados2').innerHTML = ``;
+
 }
+
+function inserir(num) {
+    let numero = document.getElementById('resultados1').innerHTML;
+
+    document.getElementById('resultados1').innerHTML = numero + num;
+
+
+}
+
 function voltar() {
-    let resultado = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length - 1);
+    let resultado = document.getElementById('resultados1').innerHTML;
+
+    document.getElementById('resultados1').innerHTML = resultado.substring(0, resultado.length - 1);
+
 }
 function calcular() {
-    let resultado = document.getElementById('resultado').innerHTML;
+    let resultado = document.getElementById('resultados1').innerHTML;
     if (resultado) {
-        document.getElementById('resultado').innerHTML =  eval(resultado)
-        document.getElementById('resultado2').innerHTML = `<p>${resultado}</p>`;
-        
+        document.getElementById('resultados1').innerHTML = eval(resultado);
+
+        document.getElementById('resultados2').innerHTML = `<p>${resultado}</p>`;
+
     }
+
     else {
-        document.getElementById('resultado').innerHTML = "Nada..."
+        document.getElementById('resultados2').innerHTML = ""
     }
 }
 

@@ -1,49 +1,63 @@
+/*=======Css=======*/
+
+
+
 *{
     margin: 0;
     padding: 0;
 }
-.fundo{
-    background-image: linear-gradient(25deg,aqua, blue);
-    height: 100vh;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+
+body{
+    background-color: aqua;
 }
+
+/*=======CALCULADORA=======*/
 .calculadora{
+
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 15px;
-    padding: 15px;
-    color: black;
+    padding: 10px;
+    color: rgb(255, 0, 0);
+
 }
+
 .botao{
-    width: 70px;
+
+    border-radius: 20px;
+    color: black;
+    width:70px;
     height: 70px;
     font-size: 30px;
     cursor: pointer;
     margin: 5px;
     background-color: rgb(255, 255, 255);
     border: none;
-    color: black
+   
 }
-.botao:hover{
-    background-color: white;
-}
-#resultado{
+
+/*=======CÁLCULOS=======*/
+
+
+#resultados1{
+
     background-color: black;
+    color: white;
     width: 300px;
     height: 30px;
+    padding: 5px;
     margin: 5px;
     margin-bottom: -1px;
     font-size: 25px;
-    color: white;
     text-align: right;
-    padding: 5px;
+    
 }
-#resultado2{
+
+#resultados2{
+
     background-color: black;
     width: 300px;
     height: 30px;
@@ -53,4 +67,5 @@
     color: aqua;
     text-align: right;
     padding: 5px;
+
 }
