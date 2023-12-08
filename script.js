@@ -1,8 +1,12 @@
+//=================================CALCULOS=================================
+
 
 function limpar() {
     document.getElementById('resultados1').innerHTML = "";
 
     document.getElementById('resultados2').innerHTML = ``;
+
+    document.getElementById('igual').focus();
 
 }
 
@@ -34,7 +38,7 @@ function calcular() {
     }
 }
 
-//KEYPRESS=================================
+//=================================KEYPRESS=================================
 
 
 document.addEventListener("keypress", function (event) {
